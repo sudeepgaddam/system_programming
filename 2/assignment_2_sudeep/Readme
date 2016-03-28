@@ -1,0 +1,43 @@
+README
+
+Files included:
+All source files Main.cpp (contains all thread handler, Mapper_pool_updater, Mapper, reducer, word_count_writer
+Did not finish the optional part, All functions are commented and self explanatory
+this README
+Makefile
+Input.txt
+Sample "wordCount.txt" for Input.txt file
+
+How To Run:
+     There is a Makefile provided.
+     So, make will build 1 output files => Main.out
+     You need to give following command:
+	   ./Main.out <Input file path> <Num-Mapper threads> <Num-Reducer threads> > "outputfile"
+	 Main.out expects three arguements , Input file name, Mapper threads, Reducer threads
+
+	 Sample Execution:
+		./Main.out "./Input.txt" 2 1
+	 After running it, It writes word count to wordCount.txt in the same directory
+	 make clean will remove all the *.out files
+	 
+Sample Output:
+	(cap,4)
+	(class,3)
+	(concurrency,1)
+	(course,4)
+	(culture,2)
+	(date,4)
+	(door,4)
+	(eraser,5)
+	(error,3)
+	(field,5)
+	(floor,1)
+	(gap,4)
+	(group,9)
+	(heat,4)
+	(hierarchy,1)
+	(hole,5)
+	(house,1)
+	(ice,4)
+	(inconsistency,2)
+

@@ -1,0 +1,17 @@
+all: hello
+
+hello: mapper.o reducer.o combiner.o
+
+mapper.o: mapper.c
+    gcc  mapper.c
+
+reducer.o: reducer.c
+    gcc  reducer.c
+
+combiner.o: combiner.c
+    gcc  combiner.c
+
+
+clean:
+    rm *o hello
+

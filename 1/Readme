@@ -1,0 +1,39 @@
+README
+
+Files included:
+All source files (combiner.cpp, mapper.cpp, reducer.cpp)
+this README
+Makefile
+Input.txt
+Sample "Output.txt" for Input.txt file
+
+How To Run:
+     There is a Makefile provided.
+     So, make will build three output files => combiner.out, reducer.out and mapper.out
+     You need to give following command:
+	   ./combiner.out ./Input.txt > "outputfile"
+	 combiner.out expects a single arguement. i.e., the input file path
+	 After running it prints out the word counts for each word.
+	 make clean will remove all the *.out files
+	 
+Sample Output:
+	(cap,4)
+	(class,3)
+	(concurrency,1)
+	(course,4)
+	(culture,2)
+	(date,4)
+	(door,4)
+	(eraser,5)
+	(error,3)
+	(field,5)
+	(floor,1)
+	(gap,4)
+	(group,9)
+	(heat,4)
+	(hierarchy,1)
+	(hole,5)
+	(house,1)
+	(ice,4)
+	(inconsistency,3)
+

@@ -1,0 +1,49 @@
+README
+
+Files included:
+All source files Main.cpp and Philosopher.cpp
+Header File : philo.h
+this README
+Makefile
+
+
+
+How To Run:
+     There is a Makefile provided.
+     So, make will build 2 output files => Main.out and Philosopher.out
+     You need to give following command:
+	   ./Main.out <Num philosophers> <Num-iterations>
+	 Main.out expects two arguements, Number of philosphers and Number of Rounds
+
+	 Sample Execution:
+		./Main.out  5 2
+	 After running it, It prints states of philosophers during execution of dining philosophers
+	 problem. States are: Thinking, Hungry and eating. All the child processes of Main.out will exec philosopher.out.
+	 Initially, Before the barrier condition pass, All philosophers are in Thinking state. 
+	 After that, The dining starts. Semaphores are implemented using memory mapped file.
+	 
+Sample Output:
+:~/Desktop/asp/assignments/3$ ./main.out 5 3
+Entered Philosopher 2
+Entered Philosopher 3
+Entered Philosopher 1
+Entered Philosopher 4
+Entered Philosopher 5
+Philosopher 5 is thinking
+Philosopher 1 is thinking
+Philosopher 2 is thinking
+Philosopher 4 is thinking
+Philosopher 3 is thinking
+Philosopher 1 is Hungry
+Philosopher 1 takes fork 5 and 1
+Philosopher 1 is Eating
+Philosopher 1 putting fork 5 and 1 down
+Philosopher 1 is thinking
+Philosopher 5 is Hungry
+Philosopher 5 takes fork 4 and 5
+Philosopher 5 is Eating
+Philosopher 5 putting fork 4 and 5 down
+Philosopher 5 is thinking
+Philosopher 4 is Hungry
+Philosopher 4 takes fork 3 and 4
+............................
